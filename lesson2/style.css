@@ -1,0 +1,24 @@
+.text1 {
+background: #424040;
+color: white;
+}
+
+.text2 {
+color: rgb(225, 153, 218);
+}
+
+.square {
+height: 100px;
+width: 100px;
+background: red;
+}
+
+.text3 {
+width: 300px;
+background: #bc93cc;
+}
+
+.text4 {
+color: white;
+background: #ad53c9;
+}
