@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: inline-block;
+    max-width: 300px;
+    background: #b8b092;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: inset 0px 0px 5px  ;
+}
+
+main {
+    background: #bfdcdf;
+    border-top-left-radius: 30px ; 
+    border-bottom-left-radius: 30px ;
+    overflow: auto;
+    max-height: 500px;
+}
