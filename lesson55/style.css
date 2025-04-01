@@ -1,0 +1,235 @@
+body {
+    background: #181E34;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
+    
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Хедер */
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 48px;
+    margin: 30px 0 36px;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+
+.header-nav {
+    margin-right: 34px;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px;
+}
+
+.header-btn {
+    background: #fff;
+    color: rgb(39, 102, 174);
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 100px;
+    padding: 14px 30px;
+}
+
+/* Мейн */
+
+.hero {
+    background: url("./imgs/Rectangle\ 1.png") 10% 50% / cover no-repeat;
+    max-height: 508px;
+    height: 100%;
+    padding: 120px 0;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main-sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section1 {
+    max-width: 436px;
+}
+
+.main-text1 {
+    margin-bottom: 15px;
+}
+
+.main-text1 span {
+    color: rgb(1, 162, 203);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.main-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+    width: 100%;
+}
+
+.main-btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 30px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    background: linear-gradient(180.00deg, rgb(0, 164, 204), rgb(39, 102, 174) 100%);
+
+}
+
+.main-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 30px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    background: linear-gradient(180.00deg, rgb(0, 164, 204), rgb(39, 102, 174) 100%);
+}
+
+.main-btn2 img {
+    margin-left: 4px;
+}
+
+/* Карточки */
+
+.cards {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.cards-text {
+    display: block;
+    justify-self: center;
+    text-align: center;
+    max-width: 513px;
+    margin-bottom: 60px;
+}
+
+
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+    margin-bottom: 48px;
+
+}
+
+.cards-item {
+    display: flex;
+}
+
+.card {
+    padding: 28px;
+    margin: 14px;
+    box-sizing: border-box;
+    border: 2px solid rgb(23, 107, 174);
+    border-radius: 16px;
+
+    box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
+    background: rgb(25, 124, 184);
+    max-width: 204px;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    display: flex;
+    text-align: center;
+}
+
+.cards-btn {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: linear-gradient(180.00deg, rgb(0, 164, 204), rgb(39, 102, 174) 100%);
+    max-width: 436px;
+    padding: 18px 30px;
+    margin: 0 auto;
+}
+
+/* Футер */
+
+footer {
+    border-top: 1px solid rgb(50, 57, 82);
+}
+
+.footer {
+    margin: 60px 0;
+    display: flex;
+}
+
+.footer-desc {
+    max-width: 267px;
+    margin-right: auto;
+}
+
+.footer-desc img {
+    margin-bottom: 15px;
+}
+
+.footer-col1 {
+    margin-right: 117px;
+}
+
+.footer-col-title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
