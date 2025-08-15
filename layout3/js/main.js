@@ -18,3 +18,19 @@
 
 })()
 
+document.querySelector('.about__img-button').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.body.classList.add('body--opened-modal');
+});
+
+document.querySelector('.modal__cancel').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.body.classList.remove('body--opened-modal');
+});
+
+document.querySelector('.modal').addEventListener('click', function (event) {
+    if (event.target == this) {
+        event.preventDefault();
+        document.body.classList.remove('body--opened-modal');
+    }
+});

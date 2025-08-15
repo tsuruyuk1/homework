@@ -11,7 +11,7 @@
 
 </head>
 
-<body class="body">
+<body class="body ">
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
@@ -80,12 +80,83 @@
                 </div>
             </div>
         </header>
-        <main class="main"></main>
+
+        <main class="main">
+
+            <section class="about main__about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__img">
+                            <img src="./imgs/content/girl-2.png" alt="">
+                            <div class="about__img-control">
+                                <a class="about__img-button" href="#">
+                                    <img src="./imgs/icons/gift.svg" alt="">
+                                </a>
+                                Нажми на подарок, чтобы получить наш фирменный рецепт
+                            </div>
+                        </div>
+                        <div class="about__body">
+                            <div class="about__heading">
+                                <h2 class="about__title">
+                                    Наша школа —
+                                </h2>
+                                <p class="about__subtitle">
+                                    это уютный дом для начинающих кондитеров
+                                </p>
+                            </div>
+                            <p class="about__text">
+                                С нами ты погрузишься в удивительный мир кондитерского искусства, получишь новые знания
+                                и профессиональные навыки! Обретёшь веру в свои силы, научишься приготовлению
+                                разнообразных современных и классических десертов
+                            </p>
+                        </div>
+                        <ul class="about__grid">
+                            <li class="about__grid-item">
+                                <div class="about__grid-img">
+                                    <img src="./imgs/icons/hat-2.svg" alt="">
+                                </div>
+                                <div class="about__grid-text">
+                                    Живое общение с наставниками и одногруппниками
+                                </div>
+                            </li>
+                            <li class="about__grid-item">
+                                <div class="about__grid-img">
+                                    <img src="./imgs/icons/hat-2.svg" alt="">
+                                </div>
+                                <div class="about__grid-text">
+                                    Предоставление всех необходимых материалов
+                                </div>
+                            </li>
+                            <li class="about__grid-item">
+                                <div class="about__grid-img">
+                                    <img src="./imgs/icons/hat-2.svg" alt="">
+                                </div>
+                                <div class="about__grid-text">
+                                    Небольшие группы до 6 человек
+                                </div>
+                            </li>
+                            <li class="about__grid-item">
+                                <div class="about__grid-img">
+                                    <img src="./imgs/icons/hat-2.svg" alt="">
+                                </div>
+                                <div class="about__grid-text">
+                                    Большие аудитории для обучения
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer_inner">
                     <div class="footer_col">
-                        <a class="footer_logo-link" href="#"><img class="footer_logo" src="./imgs/icons/logos/logo-light.svg" alt="wake & bake logo"></a>
+                        <a class="footer_logo-link" href="#"><img class="footer_logo"
+                                src="./imgs/icons/logos/logo-light.svg" alt="wake & bake logo"></a>
                         <p class="footer_logo-text">Школа кондитерского искусства</p>
                         <address class="socials">
                             <ul class="socials_list">
@@ -202,7 +273,7 @@
                                 </li>
                                 <li class="contacts_item">
                                     <img src="./imgs/icons/location.svg" alt="">
-                                    г. Москва, ул. Землянская, 9Б 
+                                    г. Москва, ул. Землянская, 9Б
                                 </li>
                             </ul>
                         </address>
@@ -222,6 +293,52 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="modal">
+        <div class="modal__window">
+            <a href="#" class="modal__cancel">
+                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                        Created with Pixso.
+                    </desc>
+                    <defs>
+                        <clipPath id="clip41_441">
+                            <rect id="cancel" rx="11.250000" width="22.500000" height="22.500000"
+                                transform="translate(0.750000 0.750000)" fill="white" fill-opacity="0" />
+                        </clipPath>
+                    </defs>
+                    <rect id="cancel" rx="11.250000" width="22.500000" height="22.500000"
+                        transform="translate(0.750000 0.750000)" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip41_441)">
+                        <path id="Vector" d="M6.75 17.24L12 12L17.24 17.24M17.24 6.75L12 12L6.75 6.75" stroke="#E1D9E1"
+                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
+                            stroke-linecap="round" />
+                    </g>
+                    <rect id="cancel" rx="11.250000" width="22.500000" height="22.500000"
+                        transform="translate(0.750000 0.750000)" stroke="#E1D9E1" stroke-opacity="1.000000"
+                        stroke-width="1.500000" />
+                </svg>
+
+            </a>
+            <img class="modal__img" src="imgs/decor/cupcakes-1.png" alt="">
+            <h3 class="modal__title">
+                Удиви своих близких вкусными капкейками
+            </h3>
+            <p class="modal__text">
+                Оставь свой e-mail, и мы вышлем рецепт на почту
+            </p>
+            <form class="modal__form">
+                <label class="modal__form-label field">
+                    <input class="modal__form-input field__input" type="email" placeholder="E-mail">
+                    <span>Введите e-mail</span>
+                </label>
+                <button class="button" type="submit">
+                    Получить подарок
+                </button>
+            </form>
+        </div>
     </div>
 
     <script src="./js/fslightbox.js"></script>
