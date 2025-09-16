@@ -52,7 +52,7 @@ function toggleTab(e) {
 
     e.preventDefault()
 
-    if(tabControl.classList.contains('tab-controls__link--active')) return
+    if (tabControl.classList.contains('tab-controls__link--active')) return
 
 
     const tabContentID = tabControl.getAttribute('href')
@@ -103,3 +103,40 @@ accordionLists.forEach(el => {
 });
 
 // ACCORDION
+
+// SLIDER-GALLERY
+
+const swiper = new Swiper('.gallery__slider', {
+
+    spaceBetween: 15,
+    slidesPerView: 1.5,
+
+    pagination: {
+        el: '.gallery__pagination',
+        type: 'fraction',
+    },
+
+    navigation: {
+        nextEl: '.gallery__next',
+        prevEl: '.gallery__prev',
+    },
+
+    breakpoints: {
+
+        601: {
+            slidesPerView: 3,
+        },
+
+        801: {
+            spaceBetween: 32,
+
+        },
+
+        1101: {
+            slidesPerView: 4,
+        }
+    }
+
+});
+
+// SLIDER-GALLERY
