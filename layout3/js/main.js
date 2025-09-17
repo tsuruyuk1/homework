@@ -106,7 +106,7 @@ accordionLists.forEach(el => {
 
 // SLIDER-GALLERY
 
-const swiper = new Swiper('.gallery__slider', {
+const gallerySwiper = new Swiper('.gallery__slider', {
 
     spaceBetween: 15,
     slidesPerView: 1.5,
@@ -140,3 +140,37 @@ const swiper = new Swiper('.gallery__slider', {
 });
 
 // SLIDER-GALLERY
+
+// SLIDER-REWIEWS
+
+const reviewsSwiper = new Swiper('.reviews__slider', {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    centeredSlides: true,
+
+
+
+    navigation: {
+        nextEl: '.reviews__next',
+        prevEl: '.reviews__prev',
+    },
+
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+    },
+
+    breakpoints: {
+
+        901: {
+            slidesPerView: 1.5,
+        },
+
+        1201: {
+            slidesPerView: 2.1,
+        }
+    }
+
+});
+
+// SLIDER-REWIEWS
