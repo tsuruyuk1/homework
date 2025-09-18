@@ -650,7 +650,7 @@
     margin-bottom: 40px;
     display: flex;
     align-items: stretch;
-    
+
 }
 
 
@@ -666,6 +666,7 @@
     transition: var(--transition);
     opacity: .5;
 }
+
 .review__slide.swiper-slide {
     transform: scale(0.9);
     transition: var(--transition);
@@ -742,6 +743,142 @@
 
 
 /* REVIEWS */
+
+/* CONTACT */
+
+.contact {
+    padding: 140px 0;
+    background: url("../imgs/decor/bg-footer.png") 50% 0% / cover no-repeat;
+}
+
+.contact__inner {
+    display: flex;
+    align-items: center;
+    gap: 84px;
+}
+
+.contact__img {}
+
+.contact__img img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 30px 0px rgba(198, 176, 161, 0.3));
+}
+
+.contact__body {
+    max-width: 420px;
+    position: relative;
+}
+
+.contact__body::after {
+    content: url('../imgs/decor/berries2.png');
+    position: absolute;
+    top: 8%;
+    right: -47%;
+}
+
+.contact__title {
+    margin-bottom: 20px;
+    color:rgba(31, 23, 17, 1);
+    font-family: Gabriola;
+    font-size: 74px;
+    line-height: .82;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+.contact__form {}
+
+.contact__label {
+    margin-bottom: 10px;
+}
+
+.field {}
+
+.contact__input-name {}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid #ac907a;
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+
+    transition: var(--transition);
+    margin-bottom: 20px;
+}
+
+.contact__input::placeholder {
+    color: #ac907a;
+    transition: var(--transition);
+}
+
+.contact__input:hover {
+    border-color: var(--accent-color);
+}
+
+.contact__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+
+.contact__check-label {
+    display: flex;
+    gap: 5px;
+    max-width: 288px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.contact__check-label a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.contact__check-label a:hover {
+    color: var(--accent-color);
+}
+
+.contact__checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #ac907a;
+    transition: var(--transition);
+    border-radius: 4px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.contact__checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../imgs/icons/check.svg') 50% 50% no-repeat;
+    opacity: 0;
+}
+
+.contact__checkbox:hover {
+    border: 1.5px solid var(--accent-color);
+}
+
+.contact__checkbox:checked {
+    background: var(--accent-color);
+    border: 1.5px solid var(--accent-color);
+}
+
+.contact__checkbox:checked::before {
+    opacity: 1;
+}
+
+.button {}
+
+/* CONTACT */
 
 /* FOOTER */
 
@@ -936,6 +1073,20 @@
     .accordion-content {
         gap: 30px;
     }
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__body::after {
+        display: none;
+    }
+
+    .contact__inner {
+        align-self: center;
+        justify-self: center;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -1093,7 +1244,7 @@
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .reviews__nav {
         align-self: end;
     }
@@ -1205,6 +1356,18 @@
         text-align: center;
     }
 
+    .contact {
+        padding-bottom: 80px;
+    }
+
+    .contact__title {
+        text-align: center;
+    }
+
+    .contact__text {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -1215,6 +1378,7 @@
 
     .modal__title {
         font-size: 38px;
+
     }
 
     .modal__window {
