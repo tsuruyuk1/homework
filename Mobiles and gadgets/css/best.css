@@ -1,0 +1,71 @@
+.best {
+    margin-bottom: 75px;
+}
+
+.best__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.best__top {
+    text-align: center;
+
+}
+
+.best__title {
+    font-family: Readex Pro;
+    font-size: 42px;
+    margin-bottom: 9px;
+}
+
+.best__subtitle {
+    font-family: Readex Pro;
+    font-size: 13px;
+    margin-bottom: 56px;
+}
+
+.best__bottom {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+}
+
+.best__card {
+    border-radius: 16px;
+    background: rgba(248, 249, 250, 1);
+    text-align: center;
+}
+
+.card__subtitle {
+    font-family: Readex Pro;
+    font-size: 13px;
+    margin-top: 41px;
+}
+
+.card__title {
+    font-family: Readex Pro;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.card__button {
+    display: inline-block;
+    padding: 14px 63px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    margin: 0 112px 30px 112px;
+
+}
+
+.card__button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.card__img {}

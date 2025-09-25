@@ -1,0 +1,129 @@
+.phones {
+    padding: 60px 0 75px;
+}
+
+.phones__slider {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    
+    /* светло-серый */
+
+}
+
+.swiper-button-prev {
+    margin-right: 24px;
+}
+
+.swiper-wrapper {
+    display: flex;
+
+}
+
+.phones__item {
+    display: flex;
+    align-items: center;
+    background: #dce5e2;
+    border-radius: 32px;
+
+}
+
+.phones__content {
+    margin-left: 56px;
+    flex: 1;
+    max-width: 688;
+}
+
+.phones__title {
+    font-family: 'Readex Pro';
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 69.6px;
+    margin-bottom: 19px;
+}
+
+.phones__text {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin-bottom: 30px;
+}
+
+.phones__btn {
+    display: inline-block;
+    padding: 14px 53px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.phones__btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.phones__image img {
+    height: auto;
+
+}
+
+.phones__slider {
+    overflow: hidden;
+}
+
+.phones__slider .swiper-slide {
+    border-radius: 32px;
+    overflow: hidden; /* обрезаем содержимое внутри слайда */
+}
+
+
+
+/* Кнопки свайпера */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    color: #000;
+    background: transparent;
+}
+
+.swiper-button-prev {
+    top: 50%;
+    left: 18px;
+}
+
+.swiper-button-next {
+    top: 50%;
+    right: 18px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 34px;
+    /* расстояние между палочками */
+}
+
+.swiper-pagination-bullet {
+    width: 190px;
+    /* длина палочки */
+    height: 2px;
+    /* толщина */
+    background: #000;
+    opacity: 0.2;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #000;
+}

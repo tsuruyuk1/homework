@@ -1,0 +1,72 @@
+/* Модалка скрыта по умолчанию */
+.search-modal {
+    font-family: Inter;
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Активная модалка */
+.search-modal.active {
+    display: flex;
+}
+
+.search-modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.search-modal__content {
+    position: relative;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+    animation: fadeIn 0.3s ease;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #d7a150;
+    /* под стиль сайта */
+}
+
+.search-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.search-close:hover {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

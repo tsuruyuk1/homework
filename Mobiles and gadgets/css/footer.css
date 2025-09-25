@@ -1,0 +1,113 @@
+.footer {
+    background: var(--gray-bg);
+
+}
+
+.footer hr {
+    background: #dce5e2;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 44px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 28px;
+    /* расстояние между колонками */
+}
+
+/* Бренд (левая часть) */
+.footer__brand {
+    max-width: 300px;
+}
+
+.footer__logo {
+    margin-bottom: 18px;
+}
+
+.footer__text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19.2px;
+
+}
+
+/* Навигация */
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+/* Колонки */
+.footer__column {
+    min-width: 140px;
+}
+
+.footer__title {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+.footer__list {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+
+    a {
+        text-decoration: none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right,
+                #0022ff,
+                #923fce 50%,
+                #000000 50%);
+        background-size: 200% 100%;
+        background-position: 100%;
+    }
+
+    a:hover {
+        transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+        background-position: 0%;
+    }
+}
+
+.footer__hr {
+    background: #dce5e2;
+    height: 1px;
+    width: 90%;
+    justify-self: center;
+    margin-top: 78px;
+}
+
+.footer__made-by {
+    display: flex;
+    margin-top: 52px;
+    gap: 2px;
+    align-items: center;
+}
+
+.footer__made-by-1 {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 18px;
+}
+
+.footer__made-by-1 span {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+
+}

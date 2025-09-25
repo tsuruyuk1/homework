@@ -1,0 +1,169 @@
+.header {}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.header__logo {}
+
+.header__nav {
+    display: flex;
+    gap: 33px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 21px;
+}
+
+/* Контейнер для dropdown */
+.header__dropdown {
+    position: relative;
+}
+
+.header__dropdown>a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__dropdown .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Выпадающее меню */
+.dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    /* под стиль сайта */
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.dropdown__menu a {
+    display: block;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #070847;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.dropdown__menu a:hover {
+    background: rgba(7, 8, 71, 0.05);
+}
+
+/* Активное состояние */
+.header__dropdown.active .dropdown__menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.header__dropdown.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* бургер */
+.burger {
+    display: none;
+    width: 28px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1100;
+    /* чтобы было выше меню */
+}
+
+.burger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #070847;
+    /* твой основной цвет */
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(2) {
+    top: 8px;
+}
+
+.burger span:nth-child(3) {
+    top: 16px;
+}
+
+/* активное состояние (крестик) */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+/* мобильное меню */
+.mobile-menu {
+    font-family: Inter;
+    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    font-size: 16px;
+    color: #070847;
+    text-decoration: none;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+
+
+/* показываем бургер только на планшетах/мобилах */
+@media (max-width: 992px) {
+    .header__nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}

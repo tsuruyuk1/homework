@@ -1,0 +1,21 @@
+:root {
+    --gray-bg: #f8f9fa;
+    --font-family: "Inter", sans-serif;
+    --second-family: "Readex Pro", sans-serif;
+}
+
+
+.container {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}

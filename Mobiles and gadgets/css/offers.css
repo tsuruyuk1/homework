@@ -1,0 +1,150 @@
+.offers__grid {
+    display: grid;
+    grid-template-columns: 2.4fr repeat(2, 1fr);
+    /* как на картинке */
+    grid-template-rows: repeat(3, 0.85fr);
+    gap: 20px;
+}
+
+.offers__item--laptop {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    /* занимает две строки */
+}
+
+.offers__item--phone {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+.offers__item--tablet {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+}
+
+.offers__item--watch {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+
+.offers {
+    margin-bottom: 100px;
+}
+
+.offers__top {
+    text-align: center;
+    justify-self: center;
+}
+
+.offers__title {
+
+    font-family: Readex Pro;
+    font-size: 42px;
+    margin-bottom: 9px;
+}
+
+.offers__subtitle {
+    font-family: Readex Pro;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    max-width: 628px;
+    justify-self: center;
+    margin-bottom: 55px;
+    padding: 20px;
+}
+
+
+
+.offers__item {
+    position: relative;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.offers__img {
+    position: relative;
+
+}
+
+.offers__img__laptop {
+    position: absolute;
+    left: 42px;
+    top: 0;
+    /* padding: 0 97px 95px 42px; */
+}
+
+.offers__img__watch {
+    padding: 0 216px 0px 42px;
+}
+
+.offers__img__phones {
+    position: absolute;
+    top: 144px;
+    left: 16px;
+    /* padding: 144px 0 281px 16px; */
+}
+
+.offers__img__tablet {
+    position: absolute;
+    top: 252px;
+    left: -78px;
+}
+
+.offers__content {
+    z-index: 2;
+    color: #000;
+}
+
+.offers__laptop {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    text-align: right;
+
+
+}
+
+.offers__phones {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    text-align: center;
+
+}
+
+.offers__tablet {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    text-align: center;
+
+}
+
+.offers__watch {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    text-align: right;
+
+}
+
+.offers__category {
+    display: block;
+
+    font-family: Inter;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.offers__name {
+    font-family: Readex Pro;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+}

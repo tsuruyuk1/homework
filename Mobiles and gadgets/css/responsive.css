@@ -1,0 +1,193 @@
+/* ================== RESPONSIVE ================== */
+
+/* --- Ноутбуки и меньше (<=1200px) --- */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header__nav {
+        gap: 20px;
+    }
+
+    .phones__title {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .offers__content {
+        visibility: hidden;
+    }
+
+    .offers__img__laptop {
+        height: 100%;
+    }
+
+    .selled__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selled__item {
+        align-items: center;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .best__bottom {
+        flex-direction: column;
+    }
+
+    .footer__nav {
+        gap: 10px;
+    }
+}
+
+/* --- Планшеты (<=992px) --- */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header__nav {
+        display: none;
+        /* спрячем навигацию */
+    }
+
+    .header__buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    /* бургер */
+    .burger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        position: relative;
+    }
+
+    .burger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #000;
+        transition: 0.3s;
+    }
+
+    .burger span:nth-child(1) {
+        top: 0;
+    }
+
+    .burger span:nth-child(2) {
+        top: 8px;
+    }
+
+    .burger span:nth-child(3) {
+        top: 16px;
+    }
+
+    /* выпадающее меню */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .ideas__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__nav {}
+}
+
+
+
+/* --- Смартфоны (<=768px) --- */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 90%;
+    }
+
+    .offers__title {
+        font-size: 22px;
+    }
+
+    .phones__item {
+        flex-direction: column;
+        text-align: center;
+        min-height: 760px;
+    }
+
+    .phones__content {
+        margin: 10px 10px 0;
+    }
+
+    .offers {
+        display: none;
+    }
+
+    .footer__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .subscribe {
+        padding: 47px 0;
+    }
+
+    .ideas__img {
+        display: none;
+    }
+}
+
+/* --- Маленькие телефоны (<=576px) --- */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .header__logo svg {
+        width: 120px;
+    }
+
+    .offers__title {
+        font-size: 20px;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phones__item {
+        min-height: 790px;
+    }
+}
